@@ -1,2 +1,7 @@
-<app-button/>
-<app-button/>
+{{count}}
+<br/>
+<app-button (OnClick) = "foiClicado()" [Label]="this.count.toString()"/>
+<br/>
+<app-input (OnChange)="mudou($event)" />
+<br/>
+{{textinho}}
