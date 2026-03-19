@@ -6,16 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'myFirstApp';
-  count = 0;
-  textinho = ""
-  nome = "Rebeca"
-
-  foiClicado = () => {
-    this.count++
-  }
-  mudou = (text: string) => {
-    this.textinho = text
-  }
+  title = 'Aula2';
 }
-

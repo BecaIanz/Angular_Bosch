@@ -1,10 +1,25 @@
-<div style="width: 100vw; height: 100vh; margin: 0; padding: 0; background-color: burlywood; display: flex; flex-direction: row;" >
-    {{count}}
-    <br/>
-    <app-button (OnClick) = "foiClicado()" [Label]="this.count.toString()"/>
-    <br/>
-    <br/>
-    <app-input (OnChange)="mudou($event)" />
-    <br/>
-    {{textinho}}
+<div style="width: 100vw; gap: 20px; height: 100vh; margin: 0; padding: 0; background-color: burlywood; display: flex; flex-direction: row;" >
+    <div style="display: flex; flex-direction: column;">
+        <br/>
+        <app-button (OnClick) = "foiClicado()" [Label]="this.count.toString()"/>
+        <br/>
+        {{count}}
+        <br/>
+    </div>
+
+    <div style="display: flex; flex-direction: column;">
+
+        <br/>
+        <app-input (OnChange)="mudou($event)" />
+        <br/>
+        {{textinho}}
+        <br/>
+    </div>
+
+    <div style="display: flex; flex-direction: column;">
+        <br/>
+        <input style="height: 2rem; width: 10rem;" type="text" [(ngModel)]="nome"/>
+        <br/>
+        {{nome}}
+    </div>
 </div>
