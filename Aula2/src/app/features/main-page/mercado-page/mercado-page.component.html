@@ -1,0 +1,7 @@
+<div class="title">
+    Produtos de Mercado
+</div>
+
+<div class="mercadorias">
+    <app-card-mercado *ngFor="let m of mercadorias; track: $index" [mercadoria]="m"></app-card-mercado>
+</div>
