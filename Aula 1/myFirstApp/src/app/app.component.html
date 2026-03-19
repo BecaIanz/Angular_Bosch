@@ -1,7 +1,10 @@
-{{count}}
-<br/>
-<app-button (OnClick) = "foiClicado()" [Label]="this.count.toString()"/>
-<br/>
-<app-input (OnChange)="mudou($event)" />
-<br/>
-{{textinho}}
+<div style="width: 100vw; height: 100vh; margin: 0; padding: 0; background-color: burlywood; display: flex; flex-direction: row;" >
+    {{count}}
+    <br/>
+    <app-button (OnClick) = "foiClicado()" [Label]="this.count.toString()"/>
+    <br/>
+    <br/>
+    <app-input (OnChange)="mudou($event)" />
+    <br/>
+    {{textinho}}
+</div>
