@@ -93,70 +93,80 @@ const MockComidas: IComida[] = [
         name: "Pastel",
         description: "Pastel frito recheado com carne ou queijo",
         price: 12.50,
-        portion: "1 unidade"
+        portion: "1 unidade",
+        img: "https://i.ytimg.com/vi/V3joY-bu8QU/maxresdefault.jpg"
     },
     {
         id: 12,
         name: "Coxinha",
         description: "Salgado recheado com frango desfiado",
         price: 8.00,
-        portion: "1 unidade"
+        portion: "1 unidade",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3LDTbVg9N1fZpSPQyqdfgoZHZBGgvzN1fvQ&s"
     },
     {
         id: 13,
         name: "Feijoada",
         description: "Prato tradicional com feijão preto e carnes",
         price: 45.00,
-        portion: "1 prato"
+        portion: "1 prato",
+        img: "https://www.ajinomotofoodservice.com.br/wp/content/uploads/receitas/feijoada-1920x1080-11-01-2022-7djml.jpg"
     },
     {
         id: 14,
         name: "Panqueca",
         description: "Panqueca recheada com carne moída e molho",
         price: 21.90,
-        portion: "2 unidades"
+        portion: "4 unidades",
+        img: "https://cdn0.tudoreceitas.com/pt/posts/0/7/2/panqueca_de_carne_moida_270_600.jpg"
     },
     {
         id: 15,
         name: "Esfiha",
         description: "Esfiha aberta de carne ou queijo",
         price: 6.50,
-        portion: "1 unidade"
+        portion: "1 unidade",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX4bkcbB9ZlYQDB6tNy_1nf8HaeUPUx-hkUA&s"
     },
     {
         id: 16,
         name: "Risoto",
         description: "Risoto cremoso de cogumelos",
         price: 37.00,
-        portion: "1 prato"
+        portion: "1 prato",
+        img: "https://www.boqnews.com/wp-content/uploads/2020/11/risoto.png"
     },
     {
         id: 17,
         name: "Batata Frita",
         description: "Batatas fritas crocantes com sal",
         price: 15.00,
-        portion: "300g"
+        portion: "300g",
+        img: "https://www.tendaatacado.com.br/dicas/wp-content/webp-express/webp-images/uploads/2022/06/como-fazer-batata-frita-topo.jpg.webp"
     },
     {
         id: 18,
         name: "Wrap",
         description: "Wrap com frango, alface e molho",
         price: 23.50,
-        portion: "1 unidade"
+        portion: "1 unidade",
+        img:"https://png.pngtree.com/thumb_back/fw800/background/20260113/pngtree-grilled-chicken-wrap-with-fresh-veggies-and-sauce-image_21109476.webp"
     },
     {
         id: 19,
         name: "Sorvete",
         description: "Sorvete de creme, chocolate ou morango",
         price: 14.00,
-        portion: "2 bolas"
+        portion: "2 bolas",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmSpWccoQe1kwK8w7MSzORUv01jy05J2drJw&s"
     },
     {
         id: 20,
         name: "Poke",
         description: "Poke havaiano com peixe cru e arroz",
         price: 42.00,
-        portion: "1 bowl"
+        portion: "1 bowl",
+        img: "https://www.becel.com.br/-/media/Project/Upfield/Brands/Becel-NL/Becel-BR/Assets/Recipes/1584187a-93ca-44b1-a693-d65d62709f90.jpg?rev=663ac0d7e3c94715b0e2dbbe9a16c9aa&w=900"
     }
 ]
 

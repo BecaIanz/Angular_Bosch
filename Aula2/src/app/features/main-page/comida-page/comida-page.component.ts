@@ -10,6 +10,8 @@ export class ComidaPageComponent {
   protected comidas: IComida[] = []
     comida?: IComida
     protected isOpen  = false;
+    title: string = "Titulo"
+    button1: string = "So vai"
   
     changeModal = (id : number) => {
       this.isOpen = true;

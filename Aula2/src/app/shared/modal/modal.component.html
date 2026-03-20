@@ -1,0 +1,14 @@
+<div class="fundo-modal" (click)="closeModal()"></div>
+<div class="modal-container">
+    <div class="title"> 
+        <p>{{Title}}</p>
+        <p class="close" (click)="closeModal()"> X </p>
+    </div>
+    <div class="body">
+        <ng-content></ng-content>
+        <div class="confirmation" *ngIf="Confirmation">
+            <app-button> {{Button1 ||  "Cancell"}} </app-button>
+            <app-button> {{Button2 ||  "Save"}} </app-button>
+        </div>
+    </div>
+</div>

@@ -94,7 +94,7 @@ const MockMercadorias: IMercadoria[] = [
         category: "Limpeza",
         price: 2.5,
         store: "Mercado Central",
-        img: "https://source.unsplash.com/featured/?dishwashing"
+        img: "https://applicativa-marketplace-prod.s3.amazonaws.com/produtos/detergente-lquido-neutro-yp-500ml-0-7896098900208.webp"
     },
     {
         id: 12,
@@ -102,7 +102,7 @@ const MockMercadorias: IMercadoria[] = [
         category: "Limpeza",
         price: 12.7,
         store: "Atacadão",
-        img: "https://source.unsplash.com/featured/?laundry-detergent"
+        img: "https://nordildistribuidora.agilecdn.com.br/57783_1.jpg"
     },
     {
         id: 13,
@@ -110,7 +110,7 @@ const MockMercadorias: IMercadoria[] = [
         category: "Limpeza",
         price: 14.3,
         store: "Supermercado Bom Preço",
-        img: "https://source.unsplash.com/featured/?fabric-softener"
+        img: "https://static1.efacil.com.br/wcsstore/ExtendedSitesCatalogAssetStore/Imagens/1000/1703312_02.jpg"
     },
     {
         id: 14,
@@ -118,7 +118,7 @@ const MockMercadorias: IMercadoria[] = [
         category: "Higiene",
         price: 11.9,
         store: "Mercado Central",
-        img: "https://source.unsplash.com/featured/?shampoo"
+        img: "https://pensefarma.vtexassets.com/arquivos/ids/180182/Shampoo-Palmolive-Naturals-Ceramidas-Force-350mL.png?v=637860741637970000"
     },
     {
         id: 15,
@@ -126,7 +126,7 @@ const MockMercadorias: IMercadoria[] = [
         category: "Higiene",
         price: 12.5,
         store: "Atacadão",
-        img: "https://source.unsplash.com/featured/?conditioner"
+        img: "https://drogariaspacheco.vteximg.com.br/arquivos/ids/766127-1000-1000/134295---condicionador-palmolive-naturals-ceramidas-force-350ml.jpg?v=637822599725070000"
     },
     {
         id: 16,
@@ -134,7 +134,7 @@ const MockMercadorias: IMercadoria[] = [
         category: "Higiene",
         price: 1.99,
         store: "Supermercado Bom Preço",
-        img: "https://source.unsplash.com/featured/?soap"
+        img: "https://goyaperfumaria.com.br/media/catalog/product/cache/67afe6675381f94f6efec73e6aa5f2a4/d/o/dove_sabonete_90g_tradicional.jpg"
     },
     {
         id: 17,
@@ -142,7 +142,7 @@ const MockMercadorias: IMercadoria[] = [
         category: "Higiene",
         price: 18.9,
         store: "Mercado Central",
-        img: "https://source.unsplash.com/featured/?toilet-paper"
+        img: "https://hortifrutibr.vtexassets.com/arquivos/ids/163689/Papel-Higienico-Folha-Dupla-Neve-12-Rolos.jpg?v=638895916157300000"
     },
     {
         id: 18,
@@ -150,7 +150,7 @@ const MockMercadorias: IMercadoria[] = [
         category: "Bebidas",
         price: 2.2,
         store: "Atacadão",
-        img: "https://source.unsplash.com/featured/?water-bottle"
+        img: "https://cdn.awsli.com.br/446/446822/produto/231083650/shopping---2023-08-28t130846-088-b17cy747kz.jpg"
     },
     {
         id: 19,
@@ -158,7 +158,7 @@ const MockMercadorias: IMercadoria[] = [
         category: "Bebidas",
         price: 6.4,
         store: "Supermercado Bom Preço",
-        img: "https://source.unsplash.com/featured/?orange-juice"
+        img: "https://andinacocacola.vtexassets.com/arquivos/ids/157672/113666_COCA-%E2%80%93-DVFrutLaranja1L.jpg?v=638404175338730000"
     },
     {
         id: 20,
@@ -166,7 +166,7 @@ const MockMercadorias: IMercadoria[] = [
         category: "Alimentos",
         price: 7.2,
         store: "Mercado Central",
-        img: "https://source.unsplash.com/featured/?margarine,butter"
+        img: "https://brf.my.salesforce.com/servlet/servlet.ImageServer?id=015U6000008mAWj&oid=00D410000012TJa&lastMod=1748260179000"
     }
 ]
 

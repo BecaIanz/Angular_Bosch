@@ -8,6 +8,7 @@ import { IMercadoria } from '../Mercado.mock';
 })
 export class ModalMercadoComponent {
 
+  titleButton : string = "Adicionar ao Carrinho"
   @Input()
   mercadoriaModal?: IMercadoria
 

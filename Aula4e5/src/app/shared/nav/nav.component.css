@@ -1,0 +1,26 @@
+nav {
+    width: 10rem;
+    height: calc(100rem - 10rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0,0,0,0.375);
+    padding: 1rem;
+    background-color: #ba91db;
+
+    section:first-child{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: .5rem;
+    }
+
+    a{
+        color: #542836;
+        font-size: 20px;
+    }
+    a:hover{
+        color: #8F5547;
+        font-size: 20px;
+    }
+}

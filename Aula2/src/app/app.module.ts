@@ -14,6 +14,8 @@ import { CardComidaComponent } from './features/main-page/comida-page/card-comid
 import { CardMercadoComponent } from './features/main-page/mercado-page/card-mercado/card-mercado.component';
 import { ModalMercadoComponent } from './features/main-page/mercado-page/modal-mercado/modal-mercado.component';
 import { ModalComidaComponent } from './features/main-page/comida-page/modal-comida/modal-comida.component';
+import { ButtonComponent } from './shared/button/button.component';
+import { ModalComponent } from './shared/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ModalComidaComponent } from './features/main-page/comida-page/modal-com
     CardComidaComponent,
     CardMercadoComponent,
     ModalMercadoComponent,
-    ModalComidaComponent
+    ModalComidaComponent,
+    ButtonComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

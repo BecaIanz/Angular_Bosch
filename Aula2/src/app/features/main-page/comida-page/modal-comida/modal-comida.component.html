@@ -1,4 +1,4 @@
-<div class="fundo-modal"></div>
+<div class="fundo-modal" (click)="closeModal()"></div>
 <div class="modal-container">
     <p class="close" (click)="closeModal()"> X </p>
     <img src="{{comida?.img}}" alt="not found">
@@ -9,5 +9,6 @@
         <p class="info"> {{comida?.portion}} </p>
         <p class="info">R${{ comida?.price}} </p>
         <p class="info">{{ comida?.description}} </p>
+        <app-button (click)="closeModal()" [title]="titleButton"></app-button>
     </div>
 </div>

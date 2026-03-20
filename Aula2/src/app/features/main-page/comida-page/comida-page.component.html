@@ -5,4 +5,8 @@
 <div class="comida">
     <app-card-comida *ngFor="let c of comidas; track: $index" [comida]="c" (click)="changeModal(c.id)"></app-card-comida>
 </div>
-<app-modal-comida *ngIf="isOpen" (Closed)="closed()" [comida]="comida" ></app-modal-comida>
+<!-- <app-modal-comida *ngIf="isOpen" (Closed)="closed()" [comida]="comida" ></app-modal-comida> -->
+
+<app-modal *ngIf="isOpen" (Closed)="closed()" [Title]="title" [Confirmation]="true" [Button1]="button1">
+    <h1>Coisinhas</h1>
+</app-modal>

@@ -8,6 +8,7 @@
         <img src="{{mercadoriaModal?.img}}" alt="coockie">
         <p class="info">R${{ mercadoriaModal?.price}} </p>
         <p class="info"> {{mercadoriaModal?.store}} </p>
+        <app-button (click)="closeModal()" [title]="titleButton"></app-button>
     </div>
 </div>
 
