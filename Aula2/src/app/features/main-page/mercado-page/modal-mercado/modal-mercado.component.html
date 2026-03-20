@@ -1,0 +1,13 @@
+<div class="fundo-modal"></div>
+<div class="modal-container">
+    <div class="title"> 
+        {{ mercadoriaModal?.name}} 
+        <p class="close" (click)="closeModal()"> X </p>
+    </div>
+    <div class="body">
+        <img src="{{mercadoriaModal?.img}}" alt="coockie">
+        <p class="info">R${{ mercadoriaModal?.price}} </p>
+        <p class="info"> {{mercadoriaModal?.store}} </p>
+    </div>
+</div>
+

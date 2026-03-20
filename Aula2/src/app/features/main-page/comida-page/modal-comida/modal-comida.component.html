@@ -1,0 +1,13 @@
+<div class="fundo-modal"></div>
+<div class="modal-container">
+    <p class="close" (click)="closeModal()"> X </p>
+    <img src="{{comida?.img}}" alt="not found">
+    <div class="title"> 
+        {{ comida?.name }} 
+    </div>
+    <div class="body">
+        <p class="info"> {{comida?.portion}} </p>
+        <p class="info">R${{ comida?.price}} </p>
+        <p class="info">{{ comida?.description}} </p>
+    </div>
+</div>

@@ -3,5 +3,6 @@
 </div>
 
 <div class="mercadorias">
-    <app-card-mercado *ngFor="let m of mercadorias; track: $index" [mercadoria]="m"></app-card-mercado>
+    <app-card-mercado *ngFor="let m of mercadorias; track: $index" [mercadoria]="m" (click)="changeModal(m.id)" ></app-card-mercado>
 </div>
+<app-modal-mercado *ngIf="isOpen" (Closed)="closed()" [mercadoriaModal]="mercadoria" ></app-modal-mercado>

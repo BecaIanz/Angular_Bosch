@@ -1,6 +1,6 @@
 .card {
-    width: 18rem;
-    height: 8rem;
+    width: 20rem;
+    height: 15rem;
     background-color: #FFD07A;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.375);
@@ -13,6 +13,11 @@
     z-index: 99;
 
     
+    img{
+        width: 10rem;
+        height: 9rem;
+        border-radius: 10px;
+    }
     
     p{
         display: flex;
@@ -41,9 +46,11 @@
     }
 }
 .card:hover{
-    width: 18.5rem;
-    height: 8.5rem;
-    z-index: 0;
+    background-color: #d3a859;
+
+    img{
+        opacity: 0.6;
+    }
     .description{
         display: block;
         width: 100%;

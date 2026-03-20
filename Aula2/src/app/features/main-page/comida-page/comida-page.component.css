@@ -7,10 +7,11 @@
 .title {
     color: #452621;
     width: 100%;
-    font-size: 50px;
+    font-size: 45px;
     font-family:'Georgia', serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding-top: 1rem;
+    margin: 0;
 }

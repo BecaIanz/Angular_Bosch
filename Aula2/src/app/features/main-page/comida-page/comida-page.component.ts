@@ -8,6 +8,16 @@ import MockComidas, { IComida } from './Comida.mock'
 })
 export class ComidaPageComponent {
   protected comidas: IComida[] = []
+    comida?: IComida
+    protected isOpen  = false;
+  
+    changeModal = (id : number) => {
+      this.isOpen = true;
+      this.comida = this.comidas.find(c => c.id == id)
+    }
+    closed = () => {
+      this.isOpen = false
+    }
 
 
   constructor (){

@@ -3,5 +3,6 @@
 </div>
 
 <div class="comida">
-    <app-card-comida *ngFor="let c of comidas; track: $index" [comida]="c"></app-card-comida>
+    <app-card-comida *ngFor="let c of comidas; track: $index" [comida]="c" (click)="changeModal(c.id)"></app-card-comida>
 </div>
+<app-modal-comida *ngIf="isOpen" (Closed)="closed()" [comida]="comida" ></app-modal-comida>
