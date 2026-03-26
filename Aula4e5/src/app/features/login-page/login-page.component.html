@@ -1,6 +1,10 @@
 <app-modal [Confirmation]="true" [Title]="title">
     <p>CPF</p>
-    <input type="text">
+    <app-validate-cpf 
+        (isValid)="changeValid($event)"
+        (cpfValid)="changeCpf($event)"
+        ></app-validate-cpf>
+    <h4 *ngIf="!isValid">CPF Inválido</h4>
     <p>Senha</p>
     <input type="password">
 </app-modal>

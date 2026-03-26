@@ -7,6 +7,7 @@ import { NotFoundPageComponent } from './features/not-found-page/not-found-page.
 const routes: Routes = [
   {path: '', component: MainPageComponent},
   {path: 'login', component: LoginPageComponent},
+  {path: 'login/:tab', component: LoginPageComponent},
   {path: '**', component: NotFoundPageComponent}
 
 ];

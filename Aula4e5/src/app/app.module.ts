@@ -10,6 +10,7 @@ import { LoginPageComponent } from './features/login-page/login-page.component';
 import { NotFoundPageComponent } from './features/not-found-page/not-found-page.component';
 import { ModalComponent } from './shared/modal/modal.component';
 import { ButtonComponent } from './shared/button/button.component';
+import { ValidateCpfComponent } from './features/login-page/validate-cpf/validate-cpf.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ButtonComponent } from './shared/button/button.component';
     NotFoundPageComponent,
     ModalComponent,
     ButtonComponent,
+    ValidateCpfComponent
   ],
   imports: [
     BrowserModule,
