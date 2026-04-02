@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ModalComponent } from "../../shared/modal/modal.component";
+
 
 @Component({
   selector: 'app-login-page',
-  templateUrl: './login-page.component.html',
-  styleUrls: ['./login-page.component.css']
+  standalone: true,
+  imports: [ModalComponent],
+  templateUrl: './login-page.html',
+  styleUrl: './login-page.css',
 })
+export class LoginPage implements OnInit {
 
-export class LoginPageComponent implements OnInit {
   isSubscribe = false
 
   constructor(
@@ -21,14 +25,12 @@ export class LoginPageComponent implements OnInit {
     })
   }
   title: string ="Login"
-  cpf: string = ""
-  isValid: boolean = false
 
-  changeValid = (text: any) => {
-    this.isValid = text
-  }
-  changeCpf = (text: any) => {
-    this.cpf = text
+  _login = () => {
+
+    this._router.navigate(['/']);
+    console.log("teoricamente foi")
+
   }
 
 }

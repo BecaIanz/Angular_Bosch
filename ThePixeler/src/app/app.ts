@@ -12,23 +12,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('ThePixeler');
-  protected _date = signal(new Date())
-  protected _stringDate = computed(() => {
-    return `${this._date().getFullYear()}-${this._date().getMonth()+1}-${this._date().getDate()}`
-  })
-
-  ngOnInit(){
-    console.log(this.title())
-  }
-
-  addDay(add: boolean = true) {
-    this._date.update((oldValue) => {
-      let day = add ?  oldValue.getDate() + 1 : oldValue.getDate() - 1
-      let month = oldValue.getMonth()
-      let year = oldValue.getFullYear()
-
-      return new Date(year, month, day)
-    })
-  }
+  
 }
