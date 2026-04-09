@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 import { NgForOf } from "../../../../node_modules/@angular/common/types/_common_module-chunk";
 import {generateSequentialPixels, IPixel } from './Pixel.mock';
 import { ModalComponent } from "../../shared/modal/modal.component";
-import { FormsModule, ɵInternalFormsSharedModule } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, Validators, ɵInternalFormsSharedModule } from '@angular/forms';
+import { AuthApi } from '../../domain/auth.api';
+import { LoginDto } from '../../domain/UserInterfaces';
 
 @Component({
   selector: 'app-main-page',
@@ -18,9 +20,11 @@ export class MainPage {
   color: string = ""
   pixelChange!: IPixel
 
-  constructor (){
+  constructor (private api: AuthApi){
     this.pixels = generateSequentialPixels()
+
   }
+
 
   onChangeColor = (pixel: IPixel) => {
     this.pixelChange = pixel

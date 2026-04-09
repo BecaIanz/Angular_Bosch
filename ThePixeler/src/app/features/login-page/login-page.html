@@ -1,8 +1,13 @@
 <app-modal [Confirmation]="true" [Title]="title">
-    <p>Login</p>
-    <input type="text">
-    <p>Senha</p>
-    <input type="password">
-
-    <button (click)="_login()">Entrar</button>
+    <form action="get" [formGroup]="LoginForm" (ngSubmit)="login()">
+        <label for="">UserName</label>
+        <br>
+        <input type="text" formControlName="username">
+        <label for="">Password</label>
+        <br>
+        <input type="text" formControlName="password">
+        <br>
+        <button (click)="_login()" type="submit"> Login</button>
+    </form>
+    <a href="/register">Registrar</a>
 </app-modal>
