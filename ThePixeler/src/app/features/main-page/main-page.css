@@ -1,9 +1,45 @@
-.tela{
+.container-pixel{
     width: 900px;
     height: 900px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    border: 1px solid rgb(119, 114, 114);
 }
 .pixel{
-
     width: 3px;
     height: 3px;
+    position: absolute;
+}
+.pixel:hover{
+    background-color: gray;
+}
+.modal{
+    width: 15rem;
+    height: 8rem;
+    background-color: #636b2f;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 99;
+    position: absolute;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #bac095;
+}
+.button{
+    border-radius: 5px;
+    border: 1px solid #3c411f;
+    padding: 5px;
+}
+.button:hover{
+    background-color: #bac095;
 }

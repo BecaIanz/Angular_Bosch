@@ -5,5 +5,22 @@ export interface IPixel {
     color: string,
     userId: number
 }
-// O mock vai começar vazio e sendo uma matriz, e os elementos vão ser criados no html e os valores serão atribuidos para ele lá
-export const MockPixel: IPixel[[]]
+
+export function generateSequentialPixels(width = 300, height = 300): IPixel[] {
+   const MockPixels: IPixel[] = [];
+
+  for (let i = 0; i < width * height; i++) {
+    const x = i % width;
+    const y = Math.floor(i / width);
+
+    MockPixels.push({
+      id: i + 1,
+      x,
+      y,
+      color: "#ffffff", // ou qualquer cor inicial
+      userId: 0,
+    });
+  }
+
+  return MockPixels;
+}
