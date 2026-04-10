@@ -16,6 +16,7 @@ import { AuthApi } from '../../domain/auth.api';
 export class LoginPage implements OnInit {
 
   isSubscribe = false
+  LoggedIn = false
 
   constructor(
     private api: AuthApi,
@@ -50,7 +51,8 @@ export class LoginPage implements OnInit {
       res =>{
         console.log(res)
         sessionStorage.setItem("token", res)
-        // location.reload()
+        sessionStorage.setItem("LoggedIn", "true");
+        this._router.navigate(['/main']);
       } 
     )
 
@@ -70,9 +72,4 @@ export class LoginPage implements OnInit {
     })
   }
   title: string ="Login"
-
-  _login = () => {
-    this._router.navigate(['/']);
-  }
-
 }

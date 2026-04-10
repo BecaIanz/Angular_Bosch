@@ -59,7 +59,7 @@ export class RegisterPage implements OnInit {
       this.api.subscribe(data).subscribe(
         res =>{
           console.log(res)
-          this._router.navigate(['/login']);
+          this._router.navigate(['']);
         })
     }
   
