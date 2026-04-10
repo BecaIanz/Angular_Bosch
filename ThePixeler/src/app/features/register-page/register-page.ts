@@ -41,6 +41,9 @@ export class RegisterPage implements OnInit {
   register = () => {
       if(!this.RegisterForm.valid){
         alert("Campos Inválidos")
+        console.log("username: " , this.UserName?.value)
+        console.log("password: " , this.Password?.value)
+        console.log("confirm: " , this.ConfirmPassword?.value)
         return
       }
       if(this.Password?.value != this.ConfirmPassword?.value){

@@ -6,7 +6,7 @@ export interface IPixel {
     userId: number
 }
 
-export function generateSequentialPixels(width = 300, height = 300): IPixel[] {
+export function generateSequentialPixels(width = 100, height = 100): IPixel[] {
    const MockPixels: IPixel[] = [];
 
   for (let i = 0; i < width * height; i++) {

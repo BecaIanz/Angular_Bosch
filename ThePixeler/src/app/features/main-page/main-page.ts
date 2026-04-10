@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
-import { NgForOf } from "../../../../node_modules/@angular/common/types/_common_module-chunk";
-import {generateSequentialPixels, IPixel } from './Pixel.mock';
 import { ModalComponent } from "../../shared/modal/modal.component";
-import { FormControl, FormGroup, FormsModule, Validators, ɵInternalFormsSharedModule } from '@angular/forms';
-import { AuthApi } from '../../domain/auth.api';
-import { LoginDto } from '../../domain/UserInterfaces';
+import { ɵInternalFormsSharedModule } from '@angular/forms';
+import { PixelDto } from '../../domain/PixerInterface';
+import { PixelApi } from '../../domain/pixel.api';
 
 @Component({
   selector: 'app-main-page',
@@ -14,19 +12,31 @@ import { LoginDto } from '../../domain/UserInterfaces';
 })
 export class MainPage {
 
-  pixels?: IPixel[] 
+  pixels?: PixelDto[] 
   isChange: boolean = false
   title: string = "Digite a cor: "
   color: string = ""
-  pixelChange!: IPixel
+  pixelChange!: PixelDto
 
-  constructor (private api: AuthApi){
-    this.pixels = generateSequentialPixels()
-
+  constructor (private api: PixelApi){
+    // this.pixels = 
   }
 
+  getPixel = () => {
+    this.api.getPixels().subscribe(
+      res => {
+        console.log(res)
+        sessionStorage.setItem("pixels", JSON.stringify(res))
+        this.pixels = JSON.parse(sessionStorage.getItem("pixels") || "[]")
+      }
+    )
+  }
+  
+  ngOnInit(): void {
+    this.getPixel()
+  }
 
-  onChangeColor = (pixel: IPixel) => {
+  onChangeColor = (pixel: PixelDto) => {
     this.pixelChange = pixel
     this.isChange = true
   }

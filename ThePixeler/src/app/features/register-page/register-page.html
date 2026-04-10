@@ -1,12 +1,12 @@
 <app-modal [Confirmation]="true" [Title]="title">
-    <form action="get" [formGroup]="RegisterForm" (ngSubmit)="register()">
+    <form action="post" [formGroup]="RegisterForm" (ngSubmit)="register()">
 
         <p>UserName</p>
-        <input type="text">
+        <input type="text" formControlName="username">
         <p>Senha</p>
-        <input type="password">
+        <input type="password" formControlName="password">
         <p>Confirme sua Senha</p>
-        <input type="password">
+        <input type="password" formControlName="confirmPassword">
         <button type="submit">Entrar</button>
     </form>
     
