@@ -5,7 +5,10 @@
         <input type="text" formControlName="username">
         <label for="">Password</label>
         <br>
-        <input type="text" formControlName="password">
+        <input type="password" formControlName="password">
+        @if(!Password?.valid){
+            <p>a senha tem que ter mais que 8 caracteres</p>
+        }
         <br>
         <button type="submit"> Login</button>
     </form>

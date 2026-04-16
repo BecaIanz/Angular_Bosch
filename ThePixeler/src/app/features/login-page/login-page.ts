@@ -26,7 +26,7 @@ export class LoginPage implements OnInit {
 
   LoginForm : FormGroup = new FormGroup({
     username: new FormControl('', [Validators.required]),
-    password: new FormControl('',)
+    password: new FormControl('', [Validators.required, Validators.minLength(8)])
   })
 
   get UserName(){
